@@ -1,13 +1,14 @@
 package com.github.liucijus;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 class ExampleTest {
     @Test
-    void verifyWorks() {
+    void failToVerifyIfTestingFrameworkWorks() {
         int expected = 1;
         int actual = 2;
-        Assertions.assertEquals(expected, actual);
+        assertEquals(expected, actual);
     }
 }
